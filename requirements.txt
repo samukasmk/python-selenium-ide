@@ -1,0 +1,5 @@
+selenium
+pytest
+pytest-env
+pytest-coverage
+

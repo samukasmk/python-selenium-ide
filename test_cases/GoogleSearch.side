@@ -1,0 +1,158 @@
+{
+  "id": "10147271-c6c2-4431-8739-77c1ec334968",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://www.seleniumhq.org/",
+  "tests": [{
+    "id": "b455e009-553f-4a49-8ab9-d00b41cacb0f",
+    "name": "Google Search",
+    "commands": [{
+      "id": "710df424-6e8a-453b-8ec9-9b7abc022541",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "207985bb-7817-4ba3-b7bf-8424e091f900",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1374x709",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe3c0c44-f062-434c-b13a-8bd1e0cd3f49",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d8cc1c5-5504-4cdb-a679-4e09f731cd5e",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "python selenium\\n"
+    }, {
+      "id": "d5d94525-7716-43ad-ab20-6cf53fd55090",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "418329b7-0ef8-4aea-a978-cd61ac6baca0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h3[contains(.,'Selenium with Python — Selenium Python Bindings 2 documentation')]",
+      "targets": [
+        ["css=.bkWMgd:nth-child(1) .g:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Selenium with Python — Selenium Python Bindings 2 documentation')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5956",
+      "windowTimeout": 2000
+    }, {
+      "id": "b84c047d-ff7e-4c12-b55d-769f0f763cd4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5956}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70e1eb2c-c1f0-49d9-872c-d75569d5f845",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7d6c6b9a-e435-4c5f-9e0c-44c803332be3",
+    "name": "Selenium Site",
+    "commands": [{
+      "id": "b512e29e-d34c-4b91-8bef-e72b64104f1a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.seleniumhq.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8c02fe4-b76e-4413-b43a-c4bcde7fd206",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1374x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb18b632-0810-4390-9444-65ab4a62254a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Documentation",
+      "targets": [
+        ["linkText=Documentation", "linkText"],
+        ["css=#menu_documentation > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Documentation')]", "xpath:link"],
+        ["xpath=//li[@id='menu_documentation']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/docs/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Documentation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68f8388f-79d8-437d-9759-6398aa21aa9a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium Commands – “Selenese”",
+      "targets": [
+        ["linkText=Selenium Commands – “Selenese”", "linkText"],
+        ["css=.toctree-l1:nth-child(3) .toctree-l2:nth-child(9) > .reference", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium Commands – “Selenese”')]", "xpath:link"],
+        ["xpath=//div[@id='selenium-documentation']/div/ul/li[3]/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '02_selenium_ide.jsp#selenium-commands-selenese')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium Commands – “Selenese”')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35146d30-b0a0-46ac-8265-2bc256f273aa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a0aad65a-9a74-4483-aa1e-bdd86eba430f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b455e009-553f-4a49-8ab9-d00b41cacb0f"]
+  }],
+  "urls": ["https://www.google.com/", "https://www.seleniumhq.org/"],
+  "plugins": []
+}
